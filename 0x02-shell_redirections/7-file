@@ -1,0 +1,4 @@
+chmod +x 7-file
+./7-file
+ls -l '*\'"Best School"\'\*$\?*****:)'
+cat '*\'"Best School"\'\*$\?*****:)'
