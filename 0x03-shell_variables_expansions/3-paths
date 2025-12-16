@@ -1,8 +1,2 @@
 #!/bin/bash
-# Replace consecutive colons with a single colon to avoid counting empty entries multiple times
-clean_path=$(echo "$PATH" | tr -s ':')
-
-# Count directories by counting colons + 1
-count=$(echo "$clean_path" | awk -F: '{print NF}')
-
-echo "$count"
+echo "$(echo $PATH | tr -s ':' | tr ':' '\n' | wc -l)"
