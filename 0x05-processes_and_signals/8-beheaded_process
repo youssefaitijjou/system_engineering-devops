@@ -1,5 +1,4 @@
-#!/usr/bin/env bash
-# A Bash script that kills the 7-highlander process using SIGKILL and prints OK
-
-pkill -9 -f 7-highlander 2>/dev/null || true
-echo "OK"
+chmod +x 8-beheaded_process
+git add 8-beheaded_process
+git commit -m "Fix 8-beheaded_process to always output OK"
+git push
