@@ -1,10 +1,5 @@
 #!/usr/bin/env bash
-# A Bash script that runs indefinitely and handles SIGTERM
+# A Bash script that sends SIGTERM to the 7-highlander process
 
-trap 'echo "I am invincible!!!"' SIGTERM
-
-while true
-do
-    echo "To infinity and beyond"
-    sleep 2
-done
+pkill -f 7-highlander
+echo "OK"
