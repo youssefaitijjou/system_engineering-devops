@@ -1,5 +1,6 @@
-chmod +x 67-stop_me_if_you_can
-git add 67-stop_me_if_you_can
-git commit -m "Fix 67-stop_me_if_you_can output"
-git push
+#!/usr/bin/env bash
+# A Bash script that sends SIGTERM to the 7-highlander process
+
+pkill -f 7-highlander
+echo "OK"
 
